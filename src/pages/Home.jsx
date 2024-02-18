@@ -19,7 +19,7 @@ const Home = () => {
         <Header />
         <Hero />
       </Box>
-      <Box py={50} px={{lg : 50, md : 40, sm : 5, base : 5}} color={"#000"}>
+      <Box py={50} px={{lg : 50, md : 10, sm : 5, base : 5}} color={"#000"}>
         <Services />
       </Box>
       <Contact />

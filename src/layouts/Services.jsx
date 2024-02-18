@@ -23,12 +23,12 @@ const Services = () => {
           </Text>
           <Grid
             gridTemplateColumns={{
-              lg: "1fr 1fr 1fr",
-              md: "1fr 1fr",
+              lg: "1fr 1fr 1fr 1fr 1fr",
+              md: "1fr 1fr 1fr",
               sm: "1fr 1fr",
               base: "1fr",
             }}
-            gridGap={{lg : 10, md : 5, sm : 5, base : 0}}
+            gridGap={{lg : 5, md : 0, sm : 5, base : 0}}
             justifyContent={{
               lg: "left",
               md: "left",
