@@ -13,12 +13,13 @@ const Home = () => {
         width={"100vw"}
         height={"100vh"}
         bgImage={"url('/bg.jpg')"}
+        bgPos={"center"}
         bgSize={"cover"}
       >
         <Header />
         <Hero />
       </Box>
-      <Box py={50} px={50} color={"#000"}>
+      <Box py={50} px={{lg : 50, md : 40, sm : 5, base : 5}} color={"#000"}>
         <Services />
       </Box>
       <Contact />

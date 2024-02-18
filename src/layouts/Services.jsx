@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import ServiceCard from "../components/ServiceCard";
 import ServCompo from "../components/ServCompo";
@@ -8,14 +8,34 @@ const Services = () => {
     <Box>
       <Flex>
         <Box>
-          <Heading fontWeight={400} fontSize={60}>
+          <Heading
+            fontWeight={400}
+            fontSize={{ lg: 60, md: 50, sm: 40, base: 40 }}
+          >
             Our Services
           </Heading>
-          <Text fontSize={12} width={400}>
+          <Text
+            fontSize={{lg : 12, md : 12, sm : 10, base : 10}}
+            width={{ lg: 400, md: 400, sm: "100%", base: "300px" }}
+          >
             Beyond haircuts, discover a comprehensive range of services, from
             cloloring to extensions and many more...
           </Text>
-          <Flex gap={10}>
+          <Grid
+            gridTemplateColumns={{
+              lg: "1fr 1fr 1fr",
+              md: "1fr 1fr",
+              sm: "1fr 1fr",
+              base: "1fr",
+            }}
+            gridGap={{lg : 10, md : 5, sm : 5, base : 0}}
+            justifyContent={{
+              lg: "left",
+              md: "left",
+              sm: "center",
+              base: "center",
+            }}
+          >
             <ServiceCard
               image={
                 "https://i0.wp.com/www.hadviser.com/wp-content/uploads/2020/04/3-hairstyle-with-caramel-highlights-B6vNM4Qg7oc.jpg?resize=1080%2C1350&ssl=1"
@@ -34,7 +54,7 @@ const Services = () => {
               }
               text={"Coloring"}
             />
-          </Flex>
+          </Grid>
           <Box>
             <Heading fontWeight={500} textTransform={"capitalize"}>
               Senior Stylist
@@ -42,7 +62,7 @@ const Services = () => {
             {/* <Flex> */}
             <Box></Box>
             <Text pt={5}>Colour</Text>
-            <Box py={2} width={500}>
+            <Box py={2} width={{ lg: "90vw", md: "90vw", sm: "100%", base: "80vw" }}>
               <ServCompo number={150} text={"Foils 1/4 head"} />
               <ServCompo number={200} text={"Foils 1/2 head"} />
               <ServCompo number={225} text={"Foils 3/4 head"} />
@@ -60,7 +80,7 @@ const Services = () => {
             {/* </Flex> */}
 
             <Text>Cutting</Text>
-            <Box py={2} width={500}>
+            <Box py={2} width={{ lg: "90vw", md: "90vw", sm: "100%", base: "80vw" }}>
               <ServCompo number={120} text={"Stylecut & blowdry"} />
               <ServCompo number={140} text={"Stylecut & blowdrylong from"} />
               <ServCompo number={99} text={"Curly Cut natural dry"} />
@@ -93,7 +113,7 @@ const Services = () => {
                   <ServCompo number={"55"} text={"Blowdry Short"} />
                   <ServCompo number={"POA"} text={"Event styling"} />
 
-                  <Box>
+                  <Box fontSize={{lg : 15, md : 15, sm : 12, base : 12}}>
                     <Text>
                       <b style={{ fontSize: 20 }}>Smothing Service</b> : POA
                       please book in for an obligation free consultation and
@@ -116,7 +136,10 @@ const Services = () => {
                     </Text>
                     <Box>
                       <Text pt={5}>Colour</Text>
-                      <Box py={2} width={500}>
+                      <Box
+                        py={2}
+                        width={{ lg: "90vw", md: "90vw", sm: "100%", base: "80vw" }}
+                      >
                         <ServCompo number={145} text={"Foils 1/4 head"} />
                         <ServCompo number={180} text={"Foils 1/2 head"} />
                         <ServCompo number={205} text={"Foils 3/4 head"} />

@@ -16,7 +16,7 @@ const Header = () => {
         px={5}
         py={3}
       >
-        <Flex gap={5} alignItems={"center"}>
+        <Flex gap={5} alignItems={"center"} display={{lg : "flex", md : "flex", sm : "none", base : "none"}}>
           <NavLink text={"Home"} />
           <NavLink text={"About Us"} />
           <NavLink text={"Our Team"} />
@@ -31,6 +31,7 @@ const Header = () => {
             _hover={"none"}
             fontSize={12}
             height={10}
+            display={{lg : "block", md : "block", sm : "none", base : "none"}}
             borderRadius={40}
           >
             Contact Us

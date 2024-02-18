@@ -5,7 +5,7 @@ const ServiceCard = ({ image, text }) => {
   return (
     <Box
       my={5}
-      width={200}
+      width={{lg : 200, md : 200, sm : "100%", base : "100%"}}
       height={200}
       bgImage={`url(${image})`}
       bgSize={"cover"}

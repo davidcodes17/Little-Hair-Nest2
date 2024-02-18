@@ -18,7 +18,7 @@ const Footer = () => {
           <Flex justifyContent={"center"} mb={10}>
             <Logo width={40} />
           </Flex>
-          <Box fontSize={20} width={500}>
+          <Box fontSize={{lg : 20, md : 20, sm : "15px", base : 15}} width={{lg : 500, md : 400, sm : "100%", base : "100%"}}>
             <Text>
               <b>Address : </b>
               Best hairdresser in Brisbane. Located in the heart of Paddington,
